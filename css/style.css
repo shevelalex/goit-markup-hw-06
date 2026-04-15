@@ -1,4 +1,4 @@
-/* === 5 === */
+/* === 6 === */
 
 h1,
 h2,
@@ -431,9 +431,7 @@ a:active {
   align-items: baseline;
 }
 
-.footer-item {
-  /* margin-right: 120px; */
-}
+.footer-item {}
 
 .footer-item-center {
   margin-left: 120px;
