@@ -41,9 +41,9 @@ a:active {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -141,8 +141,8 @@ a:active {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 #banner {
@@ -220,15 +220,17 @@ a:active {
 
 .hero-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .hero-item {
-  width: calc((1440px - 72px) / 4);
+  width: 100%;
 }
 
 .hero-icon-block {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -242,18 +244,24 @@ a:active {
 }
 
 .hero-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
+  font-style: normal;
 }
 
 .hero-text {
-  font-weight: 400;
+  /* font-weight: 400;
+line-height: 150%; */
+
+  font-weight: 500;
+  letter-spacing: 0.32px;
   font-size: 16px;
-  line-height: 150%;
+  font-style: normal;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -819,4 +827,60 @@ a:active {
 
 .modal-btn-sbm:hover {
   background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .hero-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .hero-item {
+    width: calc((768px - 56px) / 2);
+  }
+
+  .hero-subtitle {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .hero-list {
+    flex-wrap: nowrap;
+  }
+
+  .hero-item {
+    width: calc((1158px - 72px) / 4);
+  }
+
+  .hero-icon-block {
+    display: flex;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-text {
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
