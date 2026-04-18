@@ -439,21 +439,14 @@ line-height: 150%; */
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  align-items: center;
   /* align-items: baseline; */
 }
 
 .footer-item {
   display: flex;
   flex-wrap: wrap;
-  display: flex;
   align-items: center;
-}
-
-.footer-item-center {
-  display: flex;
-  flex-wrap: wrap;
-  /* margin-left: 120px;
-  margin-right: 80px; */
 }
 
 .footer-logo {
@@ -549,7 +542,7 @@ line-height: 150%; */
 .footer-label-subscribe {}
 
 .footer-email {
-  width: 264px;
+  width: 288px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -857,6 +850,18 @@ line-height: 150%; */
     width: 768px;
   }
 
+  .banner {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .banner-title {
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+  }
+
   .hero-list {
     gap: 24px;
     row-gap: 72px;
@@ -893,16 +898,38 @@ line-height: 150%; */
     width: calc((768px - 56px) / 2);
   }
 
-  .banner {
-    padding-top: 112px;
-    padding-bottom: 112px;
+  .footer-list {
+    padding-left: 108px;
+    padding-right: 108px;
+    gap: 24px;
+    row-gap: 72px;
   }
 
-  .banner-title {
-    font-size: 56px;
-    line-height: 60px;
-    letter-spacing: 1.12px;
-    max-width: 496px;
+  .footer-item-logo {
+    max-width: 264px;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .footer-item-social {
+    max-width: 208px;
+  }
+
+  .footer-item-subsribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-text-subsribe {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .footer-email {
+    width: 264px;
   }
 }
 
@@ -916,6 +943,16 @@ line-height: 150%; */
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .banner {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .banner-title {
+    line-height: 107%;
+    letter-spacing: 0.02em;
   }
 
   .hero-list {
@@ -959,13 +996,15 @@ line-height: 150%; */
     width: calc((100% - 48px) / 3);
   }
 
-  .banner {
-    padding-top: 188px;
-    padding-bottom: 188px;
+  .footer-list {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: nowrap;
+    gap: 0px;
   }
 
-  .banner-title {
-    line-height: 107%;
-    letter-spacing: 0.02em;
+  .footer-item-social {
+    margin-left: 120px;
+    margin-right: 80px;
   }
 }
