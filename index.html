@@ -18,14 +18,14 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="container nav">
       <nav class="nav">
         <a href="/index.html" class="header-logo">
           Web<span class="header-logo-navi">Studio</span>
         </a>
         <ul class="header-nav">
-          <li><a class="nav-item active" href="./index.html">Studio</a></li>
+          <li><a class="nav-item nav-item-active" href="./index.html">Studio</a></li>
           <li><a class="nav-item" href="">Portfolio</a></li>
           <li><a class="nav-item" href="">Contacts</a></li>
         </ul>
@@ -39,9 +39,59 @@
             <a class="addr" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
+        <button type="button" class="header-btn-menu">
+          <svg class="modal-icon-close" width="16" height="16">
+            <use href="./images/icons.svg#icon-btn-menu"></use>
+          </svg>
+        </button>
       </address>
     </div>
-  </header> -->
+    <div class="hm-block">
+      <button type="button" class="modal-btn-close">
+        <svg class="modal-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-btn-close"></use>
+        </svg>
+      </button>
+      <div class="hm-nav-addr">
+        <nav class="nav">
+          <ul class="hm-nav">
+            <li><a class="hm-nav-item hm-nav-item-active" href="./index.html">Studio</a></li>
+            <li><a class="hm-nav-item" href="">Portfolio</a></li>
+            <li><a class="hm-nav-item" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="header-modal-nav">
+            <li>
+              <a class="addr" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="addr" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <ul class="footer-sm-list">
+        <li class="footer-sm-item"><a class="footer-sm-link" href="" target="_blank"><svg class="footer-sm-icon"
+              width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg></a></li>
+        <li class="footer-sm-item"><a class="footer-sm-link" href="" target="_blank"><svg class="footer-sm-icon"
+              width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg></a></li>
+        <li class="footer-sm-item"><a class="footer-sm-link" href="" target="_blank"><svg class="footer-sm-icon"
+              width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg></a></li>
+        <li class="footer-sm-item"><a class="footer-sm-link" href="" target="_blank"><svg class="footer-sm-icon"
+              width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg></a></li>
+      </ul>
+
+    </div>
+  </header>
   <main>
     <section class="section banner">
       <div class="container" id="banner">
@@ -337,7 +387,7 @@
       </div>
     </div>
   </footer>
-  <!-- <div class="modal-overlay">
+  <div class="modal-overlay is-open">
     <div class=" modal">
       <button type="button" class="modal-btn-close">
         <svg class="modal-icon-close" width="8" height="8">
@@ -392,7 +442,7 @@
         <button type="submit" class="modal-btn-sbm">Send</button>
       </form>
     </div>
-  </div> -->
+  </div>
 </body>
 
 </html>
