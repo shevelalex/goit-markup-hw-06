@@ -49,9 +49,7 @@ a:active {
 }
 
 .header {
-  padding-top: 24px;
   border-bottom: 1px solid #e7e9fc;
-  padding-bottom: 24px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -72,6 +70,8 @@ a:active {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-right: 76px;
 }
 
@@ -84,6 +84,7 @@ a:active {
 }
 
 .nav-item {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -130,6 +131,8 @@ a:active {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -197,6 +200,39 @@ a:active {
   justify-content: space-between;
   height: 100%;
   margin-bottom: 48px;
+}
+
+.header-modal-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hm-nav-addr-mail {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: var(--IRIS, #4D5AE5);
+}
+
+.hm-nav-addr-tel {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: var(--SLATE, #434455);
+}
+
+.hm-sm-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -313,9 +349,6 @@ a:active {
 }
 
 .hero-text {
-  /* font-weight: 400;
-line-height: 150%; */
-
   font-weight: 500;
   letter-spacing: 0.32px;
   font-size: 16px;
@@ -488,8 +521,6 @@ line-height: 150%; */
 
 .footer {
   background-color: #2e2f42;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -548,8 +579,7 @@ line-height: 150%; */
 
 .footer-sm-list {
   display: flex;
-  /* gap: 16px; */
-  gap: 40px;
+  gap: 16px;
   align-items: center;
   justify-content: center;
   margin-left: auto;
@@ -840,7 +870,8 @@ line-height: 150%; */
 }
 
 .checkbox-policy {
-  display: inline-flex;
+  display: block;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -863,16 +894,19 @@ line-height: 150%; */
 }
 
 .policy-text {
+  display: flex;
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.17;
   letter-spacing: 0.48px;
   color: #8e8f99;
+  align-items: center;
 }
 
 .policyl-link {
   color: #4D5AE5;
+  display: contents;
 }
 
 .modal-btn-sbm {
@@ -910,10 +944,16 @@ line-height: 150%; */
     width: 768px;
   }
 
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
   .header-btn-menu {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* pointer-events: none; */
   }
 
   .header-nav {
@@ -924,6 +964,13 @@ line-height: 150%; */
   .address .header-nav {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .addr {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
   }
 
   .banner {
@@ -1028,6 +1075,12 @@ line-height: 150%; */
   .address .header-nav {
     flex-direction: row;
     gap: 40px;
+  }
+
+  .addr {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
   }
 
   .section {
